@@ -16,8 +16,10 @@
 #define RAD PI/180
 #define DEG 180/PI
 using namespace std;
+
 vector<pair<int,int>> landmarks;
 double grid_map[10][10];
+
 inline void add_landmark(const pair<int,int>& pair)
 {
 	landmarks.push_back(pair);
@@ -79,6 +81,7 @@ double raycast(int degrees, double x, double y)
 	}
 	return shortest;
 }
+
 int main()
 {
 
